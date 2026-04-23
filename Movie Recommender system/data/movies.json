@@ -1,0 +1,470 @@
+[
+    {
+        "id": 1,
+        "title": "Inception",
+        "genre": "Adventure, Romance",
+        "language": "Hindi",
+        "rating": 7.5,
+        "desc": "Inception is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg"
+    },
+    {
+        "id": 2,
+        "title": "The Dark Knight",
+        "genre": "Horror, Romance",
+        "language": "Japanese",
+        "rating": 7.7,
+        "desc": "The Dark Knight is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Interstellar",
+        "genre": "Thriller, Action",
+        "language": "Korean",
+        "rating": 8.6,
+        "desc": "Interstellar is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Parasite",
+        "genre": "Sci-Fi, Adventure",
+        "language": "Japanese",
+        "rating": 9.3,
+        "desc": "Parasite is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg"
+    },
+    {
+        "id": 5,
+        "title": "3 Idiots",
+        "genre": "Thriller, Comedy",
+        "language": "French",
+        "rating": 8.4,
+        "desc": "3 Idiots is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/66A9MqXOyVFCssoloscw79z8Tew.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Avengers Endgame",
+        "genre": "Action, Drama",
+        "language": "Spanish",
+        "rating": 8.9,
+        "desc": "Avengers Endgame is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Joker",
+        "genre": "Sci-Fi, Horror",
+        "language": "Spanish",
+        "rating": 7.6,
+        "desc": "Joker is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
+    },
+    {
+        "id": 8,
+        "title": "The Shawshank Redemption",
+        "genre": "Animation, Comedy",
+        "language": "Spanish",
+        "rating": 8.6,
+        "desc": "The Shawshank Redemption is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg"
+    },
+    {
+        "id": 9,
+        "title": "The Godfather",
+        "genre": "Action, Adventure",
+        "language": "Korean",
+        "rating": 8.6,
+        "desc": "The Godfather is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+    },
+    {
+        "id": 10,
+        "title": "Fight Club",
+        "genre": "Horror, Thriller",
+        "language": "Korean",
+        "rating": 7.8,
+        "desc": "Fight Club is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg"
+    },
+    {
+        "id": 11,
+        "title": "La La Land",
+        "genre": "Adventure, Thriller",
+        "language": "French",
+        "rating": 8.6,
+        "desc": "La La Land is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg"
+    },
+    {
+        "id": 12,
+        "title": "Dangal",
+        "genre": "Sci-Fi, Horror",
+        "language": "English",
+        "rating": 8.4,
+        "desc": "Dangal is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/p2lVAcPuRPSO8Al6hDDGw0OgMiQ.jpg"
+    },
+    {
+        "id": 13,
+        "title": "Spirited Away",
+        "genre": "Sci-Fi, Thriller",
+        "language": "English",
+        "rating": 7.6,
+        "desc": "Spirited Away is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg"
+    },
+    {
+        "id": 14,
+        "title": "The Matrix",
+        "genre": "Action, Sci-Fi",
+        "language": "English",
+        "rating": 8.2,
+        "desc": "The Matrix is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg"
+    },
+    {
+        "id": 15,
+        "title": "Gladiator",
+        "genre": "Romance, Thriller",
+        "language": "Korean",
+        "rating": 8.0,
+        "desc": "Gladiator is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg"
+    },
+    {
+        "id": 16,
+        "title": "Titanic",
+        "genre": "Thriller, Action",
+        "language": "Spanish",
+        "rating": 8.7,
+        "desc": "Titanic is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
+    },
+    {
+        "id": 17,
+        "title": "Avatar",
+        "genre": "Romance, Drama",
+        "language": "English",
+        "rating": 8.5,
+        "desc": "Avatar is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/kyeqWdyUXW608qlYkRqosgbbJyK.jpg"
+    },
+    {
+        "id": 18,
+        "title": "Whiplash",
+        "genre": "Romance, Comedy",
+        "language": "English",
+        "rating": 8.9,
+        "desc": "Whiplash is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/6uSPcdGNA2A6vJmCagXkvnutegs.jpg"
+    },
+    {
+        "id": 19,
+        "title": "Dune",
+        "genre": "Horror, Drama",
+        "language": "Spanish",
+        "rating": 7.9,
+        "desc": "Dune is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg"
+    },
+    {
+        "id": 20,
+        "title": "Oppenheimer",
+        "genre": "Action, Thriller",
+        "language": "English",
+        "rating": 8.6,
+        "desc": "Oppenheimer is a critically acclaimed film known for its powerful storytelling and strong performances.",
+        "poster": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg"
+    },
+    {
+        "id": 21,
+        "title": "Arrival",
+        "genre": "Sci-Fi, Romance",
+        "language": "Spanish",
+        "rating": 8.3,
+        "desc": "Arrival tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Arrival"
+    },
+    {
+        "id": 22,
+        "title": "Blade Runner 2049",
+        "genre": "Action, Animation",
+        "language": "Korean",
+        "rating": 7.3,
+        "desc": "Blade Runner 2049 tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Blade+Runner+2049"
+    },
+    {
+        "id": 23,
+        "title": "Mad Max Fury Road",
+        "genre": "Thriller, Drama",
+        "language": "Hindi",
+        "rating": 7.4,
+        "desc": "Mad Max Fury Road tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Mad+Max+Fury+Road"
+    },
+    {
+        "id": 24,
+        "title": "Tenet",
+        "genre": "Sci-Fi, Thriller",
+        "language": "English",
+        "rating": 6.7,
+        "desc": "Tenet tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Tenet"
+    },
+    {
+        "id": 25,
+        "title": "The Martian",
+        "genre": "Action, Sci-Fi",
+        "language": "Spanish",
+        "rating": 6.8,
+        "desc": "The Martian tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=The+Martian"
+    },
+    {
+        "id": 26,
+        "title": "Gravity",
+        "genre": "Horror, Comedy",
+        "language": "Japanese",
+        "rating": 7.1,
+        "desc": "Gravity tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Gravity"
+    },
+    {
+        "id": 27,
+        "title": "The Revenant",
+        "genre": "Drama, Romance",
+        "language": "English",
+        "rating": 8.1,
+        "desc": "The Revenant tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=The+Revenant"
+    },
+    {
+        "id": 28,
+        "title": "Django Unchained",
+        "genre": "Drama, Horror",
+        "language": "Korean",
+        "rating": 7.1,
+        "desc": "Django Unchained tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Django+Unchained"
+    },
+    {
+        "id": 29,
+        "title": "Inglourious Basterds",
+        "genre": "Action, Thriller",
+        "language": "English",
+        "rating": 8.4,
+        "desc": "Inglourious Basterds tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Inglourious+Basterds"
+    },
+    {
+        "id": 30,
+        "title": "Once Upon a Time in Hollywood",
+        "genre": "Animation, Adventure",
+        "language": "Spanish",
+        "rating": 7.1,
+        "desc": "Once Upon a Time in Hollywood tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Once+Upon+a+Time+in+Hollywood"
+    },
+    {
+        "id": 31,
+        "title": "The Wolf of Wall Street",
+        "genre": "Animation, Thriller",
+        "language": "French",
+        "rating": 6.6,
+        "desc": "The Wolf of Wall Street tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=The+Wolf+of+Wall+Street"
+    },
+    {
+        "id": 32,
+        "title": "The Social Network",
+        "genre": "Animation, Sci-Fi",
+        "language": "Japanese",
+        "rating": 8.8,
+        "desc": "The Social Network tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=The+Social+Network"
+    },
+    {
+        "id": 33,
+        "title": "Catch Me If You Can",
+        "genre": "Thriller, Adventure",
+        "language": "Japanese",
+        "rating": 7.8,
+        "desc": "Catch Me If You Can tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Catch+Me+If+You+Can"
+    },
+    {
+        "id": 34,
+        "title": "The Truman Show",
+        "genre": "Thriller, Sci-Fi",
+        "language": "Hindi",
+        "rating": 7.0,
+        "desc": "The Truman Show tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=The+Truman+Show"
+    },
+    {
+        "id": 35,
+        "title": "Shutter Island",
+        "genre": "Thriller, Romance",
+        "language": "English",
+        "rating": 8.7,
+        "desc": "Shutter Island tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Shutter+Island"
+    },
+    {
+        "id": 36,
+        "title": "Get Out",
+        "genre": "Comedy, Animation",
+        "language": "Hindi",
+        "rating": 6.6,
+        "desc": "Get Out tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Get+Out"
+    },
+    {
+        "id": 37,
+        "title": "A Quiet Place",
+        "genre": "Drama, Romance",
+        "language": "Korean",
+        "rating": 7.4,
+        "desc": "A Quiet Place tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=A+Quiet+Place"
+    },
+    {
+        "id": 38,
+        "title": "The Conjuring",
+        "genre": "Action, Sci-Fi",
+        "language": "Korean",
+        "rating": 7.1,
+        "desc": "The Conjuring tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=The+Conjuring"
+    },
+    {
+        "id": 39,
+        "title": "Insidious",
+        "genre": "Animation, Sci-Fi",
+        "language": "Spanish",
+        "rating": 8.3,
+        "desc": "Insidious tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Insidious"
+    },
+    {
+        "id": 40,
+        "title": "Annabelle",
+        "genre": "Horror, Comedy",
+        "language": "Korean",
+        "rating": 8.2,
+        "desc": "Annabelle tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Annabelle"
+    },
+    {
+        "id": 41,
+        "title": "It",
+        "genre": "Adventure, Animation",
+        "language": "Hindi",
+        "rating": 8.6,
+        "desc": "It tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=It"
+    },
+    {
+        "id": 42,
+        "title": "Hereditary",
+        "genre": "Adventure, Sci-Fi",
+        "language": "French",
+        "rating": 8.3,
+        "desc": "Hereditary tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Hereditary"
+    },
+    {
+        "id": 43,
+        "title": "Toy Story",
+        "genre": "Thriller, Horror",
+        "language": "English",
+        "rating": 7.6,
+        "desc": "Toy Story tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Toy+Story"
+    },
+    {
+        "id": 44,
+        "title": "Finding Nemo",
+        "genre": "Romance, Thriller",
+        "language": "French",
+        "rating": 6.6,
+        "desc": "Finding Nemo tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Finding+Nemo"
+    },
+    {
+        "id": 45,
+        "title": "Coco",
+        "genre": "Thriller, Comedy",
+        "language": "Japanese",
+        "rating": 7.2,
+        "desc": "Coco tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Coco"
+    },
+    {
+        "id": 46,
+        "title": "Up",
+        "genre": "Sci-Fi, Adventure",
+        "language": "English",
+        "rating": 8.6,
+        "desc": "Up tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Up"
+    },
+    {
+        "id": 47,
+        "title": "Frozen",
+        "genre": "Horror, Comedy",
+        "language": "Hindi",
+        "rating": 6.8,
+        "desc": "Frozen tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Frozen"
+    },
+    {
+        "id": 48,
+        "title": "Moana",
+        "genre": "Animation, Thriller",
+        "language": "Hindi",
+        "rating": 7.0,
+        "desc": "Moana tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Moana"
+    },
+    {
+        "id": 49,
+        "title": "Encanto",
+        "genre": "Romance, Comedy",
+        "language": "English",
+        "rating": 7.8,
+        "desc": "Encanto tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Encanto"
+    },
+    {
+        "id": 50,
+        "title": "Zootopia",
+        "genre": "Comedy, Drama",
+        "language": "Japanese",
+        "rating": 7.7,
+        "desc": "Zootopia tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Zootopia"
+    },
+    {
+        "id": 51,
+        "title": "Ratatouille",
+        "genre": "Drama, Horror",
+        "language": "English",
+        "rating": 6.9,
+        "desc": "Ratatouille tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=Ratatouille"
+    },
+    {
+        "id": 52,
+        "title": "WALL-E",
+        "genre": "Comedy, Adventure",
+        "language": "Korean",
+        "rating": 8.0,
+        "desc": "WALL-E tells a compelling story filled with emotion, conflict, and memorable moments.",
+        "poster": "https://dummyimage.com/300x450/222/fff&text=WALL-E"
+    }
+]

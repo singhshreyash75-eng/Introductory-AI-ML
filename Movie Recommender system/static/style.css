@@ -1,0 +1,71 @@
+body {
+    background: #0f0f0f;
+    color: #fff;
+    font-family: 'Segoe UI', Arial;
+    margin: 0;
+}
+
+.section {
+    margin: 25px;
+}
+
+.row {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+}
+
+.row::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    min-width: 160px;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.card img {
+    width: 160px;
+    height: 240px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.card p {
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.card:hover {
+    transform: scale(1.12);
+}
+
+.banner {
+    height: 420px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+}
+
+.banner-content {
+    max-width: 600px;
+}
+
+input {
+    margin: 20px;
+    padding: 12px;
+    width: 260px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 12px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
