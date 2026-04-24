@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Analytics Pro | Fixed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root { --bg: #0b0e14; --card: #161b22; --neon: #00f2ff; }
+        body { background: var(--bg); color: #e6edf3; padding: 20px; font-family: 'Segoe UI', sans-serif; }
+        .stats-card { background: var(--card); border: 1px solid #30363d; border-radius: 15px; padding: 20px; margin-bottom: 20px; min-height: 380px; }
+        .chart-container { position: relative; height: 280px; width: 100%; }
+        h2 { color: var(--neon); font-weight: 800; text-shadow: 0 0 10px rgba(0,242,255,0.2); }
+        select { background: #0d1117; color: var(--neon); border: 2px solid var(--neon); padding: 8px 15px; border-radius: 8px; cursor: pointer; }
+        .table-dark { background: #161b22; border: 1px solid #30363d; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-5 border-bottom pb-3" style="border-color: #30363d !important;">
+        <h2>MUSIC PULSE <span id="regStatus" style="font-size: 1rem; color: #8b949e; margin-left: 10px;"></span></h2>
+        <select id="regionSelect" onchange="loadDashboard()">
+            <option value="world">Global World</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="mexico">Mexico</option>
+            <option value="spain">Spain</option>
+            <option value="korea">South Korea</option>
+            <option value="japan">Japan</option>
+        </select>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="stats-card">
+                <h6>Popularity Trend (Top 10 Songs)</h6>
+                <div class="chart-container"><canvas id="lineChart"></canvas></div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="stats-card">
+                <h6>Top Artists Domination</h6>
+                <div class="chart-container"><canvas id="donutChart"></canvas></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="stats-card">
+                <h6>Album Type Distribution</h6>
+                <div class="chart-container"><canvas id="barChart"></canvas></div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="stats-card">
+                <h6>Content Analysis (Explicit vs Clean)</h6>
+                <div class="chart-container"><canvas id="polarChart"></canvas></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats-card mt-3" style="min-height: auto;">
+        <h6 class="mb-4">Raw Data Table</h6>
+        <table class="table table-dark table-hover">
+            <thead><tr><th>#</th><th>Song</th><th>Artist</th><th>Popularity</th></tr></thead>
+            <tbody id="trackTable"></tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    let activeCharts = {}; // Object to store chart instances
+
+    async function loadDashboard() {
+        const region = document.getElementById('regionSelect').value;
+        const status = document.getElementById('regStatus');
+        status.innerText = `(Updating ${region.toUpperCase()}...)`;
+
+        try {
+            const res = await fetch(`/api/stats/${region}?t=${Date.now()}`);
+            const data = await res.json();
+            if (data.error) { alert(data.error); return; }
+
+            status.innerText = `(${data.region})`;
+
+            // HELPER FUNCTION TO DESTROY AND RECREATE CHARTS
+            const renderChart = (canvasId, config) => {
+                if (activeCharts[canvasId]) activeCharts[canvasId].destroy();
+                const ctx = document.getElementById(canvasId).getContext('2d');
+                activeCharts[canvasId] = new Chart(ctx, config);
+            };
+
+            // 1. Line Chart (FIXED FLAT LINE)
+            renderChart('lineChart', {
+                type: 'line',
+                data: {
+                    labels: data.labels,
+                    datasets: [{
+                        label: 'Popularity Score',
+                        data: data.popularity_trend,
+                        borderColor: '#00f2ff',
+                        backgroundColor: 'rgba(0, 242, 255, 0.1)',
+                        fill: true,
+                        tension: 0.4,
+                        pointRadius: 6,
+                        pointHoverRadius: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            // Auto-adjust scale so it's not flat
+                            min: Math.min(...data.popularity_trend) - 2,
+                            max: Math.max(...data.popularity_trend) + 2,
+                            ticks: { color: '#8b949e' }
+                        },
+                        x: { ticks: { color: '#8b949e', display: false } }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            });
+
+            // 2. Donut Chart
+            renderChart('donutChart', {
+                type: 'doughnut',
+                data: {
+                    labels: Object.keys(data.artists),
+                    datasets: [{
+                        data: Object.values(data.artists),
+                        backgroundColor: ['#ff007a', '#00f2ff', '#7000ff', '#ff8a00', '#00ff85'],
+                        borderWidth: 0
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // 3. Bar Chart
+            renderChart('barChart', {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(data.albums),
+                    datasets: [{ label: 'Tracks', data: Object.values(data.albums), backgroundColor: '#7000ff', borderRadius: 5 }]
+                },
+                options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false }
+            });
+
+            // 4. Polar Chart
+            renderChart('polarChart', {
+                type: 'polarArea',
+                data: {
+                    labels: ['Explicit', 'Clean'],
+                    datasets: [{ data: data.explicit, backgroundColor: ['rgba(255,0,122,0.6)', 'rgba(0,242,255,0.6)'] }]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // Update Table
+            document.getElementById('trackTable').innerHTML = data.table.map((t, i) => `
+                <tr><td>${i+1}</td><td class="fw-bold">${t.song}</td><td>${t.artist}</td><td style="color:#00f2ff">${t.popularity}</td></tr>
+            `).join('');
+
+        } catch (e) {
+            console.error("Fetch Error:", e);
+        }
+    }
+
+    window.onload = loadDashboard;
+</script>
+</body>
+</html>
